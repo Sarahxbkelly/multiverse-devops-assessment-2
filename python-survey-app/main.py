@@ -1,28 +1,30 @@
-import pandas as pd
-
 from csv_processor import read_csv
 import csv
+from remove_duplicate import remove_duplicates
+from remove_empty_record import remove_empty_records
 
 file_path = './results.csv'# Read the fileprint(read_csv(file_path))
 
 results = (read_csv(file_path))
 
-duplicates = set()
+#print(results)
 
-cleanresults = []
+#ticket 2 & 3
 
-for rec in results:
-    id = rec[0]
-    if id not in duplicates:
-        duplicates.add(id)
-        cleanresults.append(rec)
+cleanresults = remove_empty_records(results)
 
 print(cleanresults)
 
+#ticket 4
 
 
 
-#print(results)
+
+
+
+
+
+
 
 
 
