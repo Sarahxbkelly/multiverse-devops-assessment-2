@@ -1,3 +1,5 @@
+import pandas as pd
+
 from csv_processor import read_csv
 import csv
 def write_csv(row, file_path):
@@ -11,5 +13,16 @@ def append_csv(row, file_path):
 
 file_path = './results.csv'# Read the fileprint(read_csv(file_path))
 
-print(read_csv(file_path))
+results = (read_csv(file_path))
+
+df = pd.read_csv('./results.csv')
+
+df.drop_duplicates(subset=['user_id'], inplace=True)
+
+df.dropna(inplace=True)
+
+print(df)
+
+
+
 
