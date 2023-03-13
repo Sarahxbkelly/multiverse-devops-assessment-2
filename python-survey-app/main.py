@@ -12,7 +12,6 @@ results = (read_csv(file_path))
 
 cleanresults = validate_field(remove_duplicates(remove_empty_records(capitalise(results))))
 
-#print(cleanresults)
 
 with open('clean_results.csv', mode='w', newline='') as clean_results:
     writer = csv.writer(clean_results, delimiter=',')
