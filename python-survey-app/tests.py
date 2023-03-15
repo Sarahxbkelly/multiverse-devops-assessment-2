@@ -68,5 +68,33 @@ def test_show_true_records():
     #Assert
     assert output == expected_output
 
+#ticket 4
+
+def test_capitalised_names():
+    #Arrange
+    capitalised = capitalise(remove_empty_records(remove_duplicates(results)))
+    expected_output = 'Dieter'
+    
+
+    #Act 
+    output = capitalised[17][1]
+
+    #Assert
+    assert output == expected_output
+
 #ticket 5
 
+def test_field_validation():
+    #Arrange
+    test_field = validate_field(remove_empty_records(remove_duplicates(results)))
+    expected_output =   ['5', 'India', 'Gentry', 'yes', 'c', '7']         
+
+    #Act
+    output = test_field[4]  
+
+    #Assert
+    assert output == expected_output          
+
+
+
+    
