@@ -56,6 +56,8 @@ def test_remove_blanks():
     #Assert
     assert len(output) == expected_output
 
+<<<<<<< HEAD
+=======
 
 def test_show_true_records():
     #Arrange
@@ -98,3 +100,4 @@ def test_field_validation():
 
 
     
+>>>>>>> develop
