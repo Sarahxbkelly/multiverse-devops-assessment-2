@@ -34,7 +34,7 @@ terraform:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: mvtools/terraform-iac
+        working-directory: terraform-iac
     permissions:
       contents: write
     steps:
