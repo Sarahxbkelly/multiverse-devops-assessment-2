@@ -10,7 +10,7 @@ for row in clean_results:
     
 
 
-#print(clean_results)
+print(clean_results)
 
   
 
