@@ -7,7 +7,7 @@ from validate_field import validate_field #ticket 5
 
 
 
-file_path = './results.csv'
+file_path = 'results.csv'
 file_name = 'clean_results.csv'
 
 results = (read_csv(file_path))
