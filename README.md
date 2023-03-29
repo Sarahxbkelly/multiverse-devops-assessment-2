@@ -65,7 +65,7 @@ Terraform IAC
 
 Code containing the infrastructure for this project
 
-.workflow
+.github/workflows
 
 Code containing all workflows for this project
 
