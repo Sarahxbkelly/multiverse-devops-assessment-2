@@ -61,7 +61,12 @@ Objectives
 
 The application also runs unit tests for each ticket created. 
 
+Terraform IAC
 
+Code containing the infrastructure for this project
 
+.workflow
+
+Code containing all workflows for this project
 
 
